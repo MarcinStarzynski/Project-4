@@ -152,3 +152,31 @@ a {
   color: #0fa002;
   border-color: #0fa002;
 }
+
+/*Gallery section*/
+.gallery {
+  background: #d9e8e5;
+}
+
+.gallery .gallery-box {
+  width: 300px;
+  height: 500px;
+  margin: 25px auto;
+}
+
+.gallery .gallery-box .gallery-box-image {
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.gallery .gallery-box .gallery-box-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery .gallery-box .gallery-box-image img:hover {
+  transform: scale(1.4);
+  transition: all 1.5s;
+}
