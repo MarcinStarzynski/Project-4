@@ -37,3 +37,75 @@ body {
     font-size: 28px;
     font-family: $font-title;
 }
+a {
+    text-decoration: none;
+    color: $color-text-dark;
+}
+
+/*Splash*/
+.splash {
+    .logo {
+        a {
+            span {
+            color: #e7e40a;
+            }
+            color: $color-text-light;
+            font-size: 20px;
+            text-shadow: 2px 5px 5px $color-sub-1;
+        }   
+        padding-top: 25px;     
+    }
+    ol {
+        a {
+            color: $color-text-light;
+        }
+        li {
+            ul {
+                li {
+                    padding: 5px;
+                    border: 1px solid $color-sub-1;
+                }
+            list-style-type: none;
+            display: none;
+            }
+            width: 90px;
+        }
+        &> li:hover {
+            ul {
+            display: block;
+        } 
+            a {
+                color: $color-text-dark;
+            }
+            background: $color-sub-1;
+        }
+        margin: 25px auto;
+        list-style-type: none;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    .title {
+        .btn {
+            padding: 0.7em 1.5em;
+            border: 1px solid $color-text-light;
+            color: $color-text-light;
+            border-radius: 15px;
+            background: #0f2027;    
+            background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);   
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);   
+            cursor: pointer;
+        }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    color: $color-text-light;
+    height: 75vh;
+    position: relative;
+    background-position: center, center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image:url(https://images.pexels.com/photos/194511/pexels-photo-194511.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) ;
+}
