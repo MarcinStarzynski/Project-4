@@ -160,9 +160,35 @@ a {
             height: 420px;
             overflow: hidden;
         }
+        background: $color-sub-1;
         width: 300px;
         height: 500px;
         margin: 25px auto;
     }
     background: $color-text-light;
+}
+
+/*Footer*/
+footer {
+    ul {
+        li {
+            i {
+                font-size: 16px;
+                line-height: 32px !important;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background: $color-text-dark;
+                color: $color-text-light;
+            }
+            a:hover i {
+                transform: scale(1.5);
+                transition: $transition;
+            }
+            margin: 3px 7px;
+        }
+        list-style-type: none;
+        display: inline-flex;
+    }
+    margin-top: 5px;
 }

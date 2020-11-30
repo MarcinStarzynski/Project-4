@@ -160,6 +160,7 @@ a {
 }
 
 .gallery .gallery-box {
+  background: #c2c6c2;
   width: 300px;
   height: 500px;
   margin: 25px auto;
@@ -179,6 +180,36 @@ a {
 
 .gallery .gallery-box .gallery-box-image img:hover {
   transform: scale(1.4);
+  transition: all 1.5s;
+}
+
+/*Footer*/
+footer {
+  margin-top: 5px;
+}
+
+footer ul {
+  list-style-type: none;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+footer ul li {
+  margin: 3px 7px;
+}
+
+footer ul li i {
+  font-size: 16px;
+  line-height: 32px !important;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #394847;
+  color: #d9e8e5;
+}
+
+footer ul li a:hover i {
+  transform: scale(1.5);
   transition: all 1.5s;
 }
 /*# sourceMappingURL=style.css.map */
