@@ -106,7 +106,7 @@ a {
 
 .splash .title {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -209,4 +209,75 @@ footer ul li i {
 footer ul li a:hover i {
   transform: scale(1.5);
   transition: all 1.5s;
+}
+
+/*Media queries*/
+@media (min-width: 600px) {
+  .splash {
+    width: 100%;
+  }
+  .splash .logo, .splash nav {
+    display: inline-flex;
+  }
+  .splash .logo {
+    justify-self: flex-start;
+    width: 20%;
+  }
+  .splash nav {
+    justify-self: flex-end;
+    width: 70%;
+  }
+  .splash .title h1 {
+    font-size: 50px;
+  }
+  .splash .title h3 {
+    font-size: 20px;
+  }
+  footer {
+    display: inline-flex;
+    width: 100%;
+  }
+  footer p {
+    width: 60%;
+    justify-self: flex-start;
+  }
+  footer ul {
+    width: 40%;
+    justify-self: flex-end;
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    max-width: 100%;
+  }
+  .icon-box {
+    display: inline-block;
+    width: 30%;
+  }
+  .row {
+    width: 48%;
+    display: inline-flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .row .gallery-box-image {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .title h1 {
+    font-size: 80px !important;
+  }
+  .title h3 {
+    font-size: 40px !important;
+  }
+  .row {
+    flex-direction: row;
+    width: 100%;
+  }
+  .row .gallery-box {
+    width: 30%;
+  }
 }
