@@ -1,0 +1,39 @@
+/*Variables*/
+$color-main: #c4d5d1;
+$color-sub-1: #c2c6c2;
+$color-sub-2: #7d9b8c;
+
+$color-text-dark: #394847;
+$color-text-light: #d9e8e5;
+
+$font-title: 'Bebas Neue', cursive;
+$font-text: 'Open Sans Condensed', sans-serif;
+
+/*General*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    color: $color-text-dark;
+    background: $color-main;
+    text-align: center;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.row {
+    width: 100%;
+}
+.section-title {
+    font-size: 56px;
+    font-family: $font-title;
+}
+.section-subtitle, .gallery-box-title {
+    font-size: 28px;
+    font-family: $font-title;
+}
